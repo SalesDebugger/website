@@ -1,0 +1,18 @@
+<nav class="shadow mb-12">
+  <div class="mx-auto mb-4 p-4 max-w-screen-lg">
+    <div class="flex end tracking-widest text-gray-400 text-sm">
+      <a
+        href="/about"
+        class="{{ if (eq .Layout "about") }}text-gray-700{{ end }}"
+      >
+        ABOUT
+      </a>
+      <a
+        href="/blog"
+        class="ml-8 {{ if (eq .Section "blog") }}text-gray-700{{ end }}"
+      >
+        BLOG
+      </a>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,14 @@
+{
+  "name": "salesdebugger-website",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production hugo --destination docs/",
+    "dev": "hugo server -D --disableFastRender"
+  },
+  "dependencies": {
+    "autoprefixer": "~10.3.1",
+    "postcss": "~8.3.6",
+    "postcss-cli": "~8.3.1",
+    "tailwindcss": "~2.2.7"
+  }
+}
