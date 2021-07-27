@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="bg-gradient-to-r from-green-500 to-green-700">
+<header class="bg-gradient-to-r from-green-500 to-green-700 border-t-4 border-green-800">
   <div class="container mx-auto">
     <div class="flex flex-col justify-center items-center py-24">
       <div class="px-4 py-2">
@@ -31,10 +31,11 @@
       <div class="pb-8 max-w-xl mx-auto">
         <a href="{{ .Permalink }}">
           <img
-            src="https://placekitten.com/g/700/400"
-            class="mb-4 w-full"
+            src="https://placekitten.com/700/700"
+            class="mb-4 w-full object-cover"
+            style="aspect-ratio: 8 / 5"
           />
-          <p class="mb-4 font-bold text-2xl tracking-wide">
+          <p class="mb-4 font-bold text-2xl">
             {{ .Title }}
           </p>
           <p class="mb-4 text-gray-500 text-lg">

@@ -1,4 +1,37 @@
 {{ define "main" }}
 {{ partial "header" . }}
-{{ .Content }}
+<main>
+  <div class="mx-auto mt-5 px-2 max-w-screen-md">
+    <h1 class="font-bold text-2xl md:text-4xl mb-5">
+      {{ .Title }}
+    </h1>
+    <div class="flex flex-col">
+      <div class="flex mb-6">
+        Social
+      </div>
+      <div class="flex items-center mb-6">
+        <img
+          src="https://placekitten.com/200/200"
+          class="h-12 w-12 rounded-full shadow-inner"
+        />
+        <div class="flex flex-col ml-3">
+          <span class="text-sm text-green-800">Firstname Lastname</span>
+          <span class="text-sm text-gray-500">
+            {{ dateFormat "Jan 2, 2006" .Date }} · {{ .ReadingTime }} min read
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="https://placekitten.com/700/700"
+    class="w-full object-cover max-w-screen-lg mx-auto mb-5 p-2"
+    style="aspect-ratio: 8 / 5"
+  />
+  <div class="mx-auto px-2 max-w-screen-md">
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</main>
 {{ end }}
